@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/investium/static/css/main.60393d0e.css",
+    "main.js": "/investium/static/js/main.16f93d47.js",
+    "index.html": "/investium/index.html",
+    "main.60393d0e.css.map": "/investium/static/css/main.60393d0e.css.map",
+    "main.16f93d47.js.map": "/investium/static/js/main.16f93d47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60393d0e.css",
+    "static/js/main.16f93d47.js"
+  ]
+}
