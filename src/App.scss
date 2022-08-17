@@ -1,0 +1,48 @@
+@import "./components/_variables";
+
+.App {
+  max-width: 1024px;
+  display: block;
+  margin: 0 auto;
+
+  &__header {
+    padding: 0 24px;
+    margin: 40px 24px 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    color: $black;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    width: 60%;
+  }
+
+  &__sidebar {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .App__container {
+    display: block;
+    margin: 16px auto;
+
+    &__main {
+      width: 100%;
+    }
+
+    &__sidebar {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "./components/_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: $grey-dark;
+  background-color: $grey-light;
+}
+
+div,
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+strong {
+  margin: 0;
+  padding: 0;
+}

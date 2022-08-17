@@ -1,0 +1,118 @@
+@import "../__variables.scss";
+
+nav {
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: $grey;
+  background-color: $black;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    color: $white;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    justify-items: center;
+    padding: 10px;
+    color: $grey;
+    text-decoration: none;
+    border: 8px solid transparent;
+    border-radius: 0 0 4px 4px;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $green;
+      border-top: 8px solid $green;
+    }
+  }
+
+  &__sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__extra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    color: $black;
+    background-color: $green;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 18px;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__icon-extra {
+    padding: 5px;
+    font-size: 16px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__photo {
+    width: 36px;
+    margin: 10px;
+  }
+
+  &__name {
+    transition: color 0.2s;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__sublink {
+    color: $black;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 5px;
+  }
+}

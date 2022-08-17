@@ -1,0 +1,54 @@
+@import "../__variables.scss";
+
+.chatRoom {
+  margin: 16px 0;
+  padding: 24px;
+  box-shadow: $box-shadow-main;
+  border-radius: 4px;
+  background-color: $white;
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+    color: $black;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: $grey-dark;
+  }
+
+  &__icon {
+    margin-bottom: 16px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: $white;
+    background-color: $green;
+  }
+
+  &__btn {
+    padding: 8px 16px;
+    color: $grey-dark;
+    border: 1px solid $grey-dark;
+    border-radius: 4px;
+    background-color: $white;
+    outline: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $black;
+      background-color: $green;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .chatRoom {
+    display: block;
+    width: 100vw;
+    margin: 16px auto;
+  }
+}

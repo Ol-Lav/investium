@@ -1,0 +1,54 @@
+@import "../__variables.scss";
+
+.recommendedUsers {
+  margin: 16px 0;
+  padding: 24px;
+  background-color: $white;
+  box-shadow: $box-shadow-main;
+  border-radius: 4px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid $white-dark;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $grey-light;
+    }
+  }
+
+  &__img {
+    width: 40px;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    &-main {
+      color: $black;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .recommendedUsers {
+    display: block;
+    width: 100vw;
+    margin: 16px auto;
+  }
+}

@@ -1,0 +1,85 @@
+@import "../__variables.scss";
+
+.explore {
+  padding: 24px;
+  margin: 16px 0;
+  box-shadow: $box-shadow-main;
+  border-radius: 4px;
+  background-color: $white;
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    color: $grey-dark;
+  }
+
+  &__icon {
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  &__btn {
+    padding: 8px 16px;
+    color: $grey-dark;
+    border: 1px solid $grey-dark;
+    border-radius: 4px;
+    background-color: $white;
+    outline: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $black;
+      background-color: $green;
+    }
+  }
+
+  &__criteria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-main {
+      margin-right: 16px;
+    }
+
+    &-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 16px;
+      padding: 4px 8px;
+      color: $black;
+      border-radius: 4px;
+      background-color: $green;
+    }
+  }
+}
+
+input {
+  width: 100%;
+  margin-right: 5px;
+  border: 1px solid $white-dark;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .explore {
+    display: block;
+    width: 100vw;
+    margin: 16px auto;
+  }
+}

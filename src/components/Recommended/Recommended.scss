@@ -1,0 +1,102 @@
+@import "../__variables.scss";
+
+.recommended {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin: 16px 0;
+  padding: 24px;
+  box-shadow: $box-shadow-main;
+  border-radius: 4px;
+  background-color: $white;
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    color: $black;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $white-dark;
+    border-radius: 4px;
+    padding: 5px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $grey-light;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+    color: $grey-dark;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: $black;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    color: $grey;
+    font-size: 8px;
+    margin: 0 2px;
+  }
+
+  &__btn {
+    width: 100%;
+    margin: 16px 0;
+    padding: 8px 16px;
+    text-align: center;
+    color: $grey-dark;
+    border: 1px solid $grey-dark;
+    border-radius: 4px;
+    background-color: $white;
+    outline: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $black;
+      background-color: $green;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .recommended {
+    display: block;
+    width: 100vw;
+  }
+}
