@@ -16,7 +16,7 @@ export const Navigation = () => {
         <div className="navbar__logo">
           <a href="/home" className="navbar__logo-link">
             <img
-              src="/images/logo.png"
+              src="images/logo.png"
               alt="Investium logo"
               className="navbar__logo-link"
             />
