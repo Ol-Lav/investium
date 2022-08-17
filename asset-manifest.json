@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/investium/static/css/main.60393d0e.css",
-    "main.js": "/investium/static/js/main.16f93d47.js",
+    "main.js": "/investium/static/js/main.85f779c3.js",
     "index.html": "/investium/index.html",
     "main.60393d0e.css.map": "/investium/static/css/main.60393d0e.css.map",
-    "main.16f93d47.js.map": "/investium/static/js/main.16f93d47.js.map"
+    "main.85f779c3.js.map": "/investium/static/js/main.85f779c3.js.map"
   },
   "entrypoints": [
     "static/css/main.60393d0e.css",
-    "static/js/main.16f93d47.js"
+    "static/js/main.85f779c3.js"
   ]
 }
